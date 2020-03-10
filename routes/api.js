@@ -6,16 +6,16 @@ router.get('/books', function(req, res) {
   DAL.getAllBooks(req, res);
 });
 
-router.get('/:id', function(req, res) {
+router.get('/book/:id', function(req, res) {
   DAL.getBook(req, res);
 });
-router.post('/add', function(req, res) {
+router.post('/book', function(req, res) {
   DAL.addBook(req, res);
 });
-router.delete('/:id', function(req, res) {
+router.delete('/book/:id', function(req, res) {
   DAL.deleteBook(req, res);
 });
-router.put('/:id', function(req, res) {
+router.put('/book/:id', function(req, res) {
   DAL.updateBook(req, res);
 });
 
