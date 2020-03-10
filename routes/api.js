@@ -12,10 +12,10 @@ router.get('/:id', function(req, res) {
 router.post('/add', function(req, res) {
   DAL.addBook(req, res);
 });
-router.delete('/delete/:id', function(req, res) {
+router.delete('/:id', function(req, res) {
   DAL.deleteBook(req, res);
 });
-router.put('/update/:id', function(req, res) {
+router.put('/:id', function(req, res) {
   DAL.updateBook(req, res);
 });
 
